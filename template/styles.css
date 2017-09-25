@@ -1,0 +1,579 @@
+html{
+	width:100%;
+	height:100%;
+}
+#main{
+    margin-top: 0.5%;
+     background-color: #EEEEEE;
+}
+
+
+
+
+#title1{
+    text-align: center;
+    padding: 1%;
+    margin:1%;
+	font-family: Comic Sans MS;
+	font-size:115%;
+	color:#D50000;
+    border:1px solid #9E9E9E;
+    background-color: #616161;
+	text-shadow:1px 1px 2px #6f0d16; 
+}
+#title2{
+     text-align: center;
+    padding: 1%;
+    margin:1%;
+	font-family: Comic Sans MS;
+	font-size:115%;
+	color:#D50000;
+    border:1px solid #9E9E9E;
+    background-color: #616161;
+	text-shadow:1px 1px 2px #6f0d16; 
+    
+}
+#one{
+     line-height: 175%;
+     font-size:110%;
+     color:#757575; 
+}
+#two{
+     line-height: 175%;
+     font-size:110%; 
+     color:#757575; 
+    
+}
+.signbtn{
+    width:20%;
+    padding: 2% 2%;
+    border: none;
+    font-size: 100%;
+    letter-spacing: 0.14em;
+    box-sizing: border-box;
+    border-radius:10%;
+	color: #fff;
+	float: right;
+	background:linear-gradient(#D50000,black);
+	background:-o-linear-gradient(#D50000,black);
+	background:-moz-linear-gradient(#D50000, black);
+   
+}
+.editbtn{
+    width:20%;
+    padding: 2% 2%;
+    border: none;
+    font-size: 100%;
+    letter-spacing: 0.14em;
+    box-sizing: border-box;
+    border-radius:10%;
+	color: #fff;
+	background:linear-gradient(green,black);
+	background:-o-linear-gradient(green,black);
+	background:-moz-linear-gradient(green, black);
+   
+}
+.signbtn2{
+    width:100%;
+    padding: 2% 2%;
+    border: none;
+    font-size: 100%;
+    letter-spacing: 0.14em;
+    box-sizing: border-box;
+    border-radius:10%;
+	color: #fff;
+    margin:3%;
+	background:linear-gradient(#D50000,black);
+	background:-o-linear-gradient(#D50000,black);
+	background:-moz-linear-gradient(#D50000, black);
+   
+}
+
+
+input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    color:#757575;
+    border:none;
+    background-color:#212121;
+    box-sizing: border-box;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    color:#757575;
+    border:none;
+    background-color:#212121;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.nav-wrapper em{
+    padding: 0.5%;
+    margin:1%;
+    border-radius: 50%;
+	width:50%;
+	font-family: Comic Sans MS;
+	font-size:150%;
+    cursor: pointer;
+	color:#D50000;
+	text-shadow:1px 1px 2px #6f0d16; 
+}
+.nav-wrapper em:hover{
+    padding: 1%;
+	font-size:157%;
+    cursor: pointer;
+	color:#9E9E9E;  
+}
+
+img{
+	max-width: 100%;
+    
+}
+
+img.avatar{
+    width: 20%;
+    border-radius: 50%;
+}
+
+.imgcontainer{
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+
+.container {
+    padding:0.5%;
+}
+
+span.psw {
+    float: left;
+    padding-bottom: 3.5px;
+}
+
+span em{
+	color:#9E9E9E;
+	
+	
+
+}
+span a{
+	color:#D50000;
+	text-decoration: none;
+}
+.animate{
+    -webkit-animation: animatezoom 0.8s;
+    animation: animatezoom 0.8s ;
+}
+.animate2{
+    -webkit-animation: animatezoom 0.8s;
+    animation: animatezoom 0.8s ;
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/*catalog page style*/
+
+
+.more{
+    position:absolute;
+	top:220%; 
+    left:42.5%;
+    background-color:#D50000;
+    text-align: center;
+    color:#9E9E9E;
+    padding: 1.5%;
+    width:15%;
+    font-size: 120%;
+    cursor: pointer;
+ 
+}
+
+.more:hover{
+    background-color:black;
+    color:#D50000;
+    padding: 2%;
+ 
+}
+
+#featured{
+   
+   font-family: Comic Sans MS;
+   font-size:120%;
+   color:#D50000;
+   text-shadow:1px 1px 2px #6f0d16; 
+}
+#slidess{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+/*Recipe.html*/
+#featured2{
+   width:70%;
+   font-family: Comic Sans MS;
+   font-size:200%;
+   color:#D50000;
+   text-shadow:1px 1px 2px #6f0d16; 
+    position:absolute;
+	top:10%;
+	left:30%;
+}
+#instructions{
+font-family: realway;
+    
+}
+#equipment{
+
+font-family: Comic Sans MS;
+}
+#ingredient{
+
+   font-family: Comic Sans MS; 
+    
+
+}
+#ingredient ul li{
+    list-style: none;
+}
+#equipment ul li{
+    list-style: none;
+}
+#sidebar{
+width:30%;
+font-family: Comic Sans MS;
+position:absolute;
+top:35%;
+left:70% ;
+border-radius: 2%;
+background-color:#9E9E9E;
+border: 1px solid #757575;
+}
+
+#other{
+width:20%;
+font-family: Comic Sans MS;
+position:absolute;
+top:30%;
+left:70% ;
+font-size:90%;
+color:#D50000;
+text-shadow:1px 1px 2px #6f0d16; 
+  
+}
+#sidebar a{
+    text-decoration: none;
+    color:silver;
+}
+#review{
+    width:50%;
+    color:#757575;
+    position:absolute;
+}
+#man{
+    margin-top: 4%;
+}
+ .avatars{
+    width:50%;
+    float:right;
+}
+  .vote1{
+    width: 3%;
+    float:right;
+    cursor: pointer;
+}
+
+.vote2{
+    width: 3%;
+    float:right;
+    cursor: pointer;
+}
+.favo{
+    width: 3%;
+    float:right;
+    cursor: pointer;
+
+}
+.svote1{
+    width: 3%;
+    float:left;
+    margin-right: 2px;
+    cursor: pointer;
+}
+.svote2{
+    width: 3%;
+    float:left;
+    margin-right: 2%;
+    cursor: pointer;
+}
+.sfavo{
+    width: 3%;
+    float:left;
+    cursor: pointer;
+
+}
+#fl {
+    float :left;
+}
+#write {
+    width:50%;
+    color:#757575;
+    position:absolute;
+	top:225%;
+	left:3%;  
+}
+
+ #write input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    color:black;
+    background-color:#EEEEEE;
+    display: inline-block;
+    box-sizing: border-box;
+}
+#write .cancelbtn{
+    padding: 2%;
+    border: none;
+    box-sizing: border-box;
+    border-radius:12%;
+	color: #fff;
+	background:-moz-linear-gradient(#D50000,#757575);
+    background:linear-gradient(#D50000,#757575);
+	background:-o-linear-gradient(#D50000,#757575);
+    
+}
+#write img{
+    width: 3%;
+    cursor: pointer; 
+}
+#footer3{
+    width:100%;
+    color:#757575;
+    text-align: center;
+    display:-webkit-box;
+	-webkit-box-orient:horizontal;
+     background-color:#9E9E9E;
+    position:absolute;
+	top:265%;
+	left:0%;
+    
+}
+
+/* Myprofile.html*/
+#container{
+    width:88%;
+    position:absolute;
+	top:93%;
+	left:3%;
+    
+}
+
+#pro{
+    margin-top:4%;
+}
+.btntop3{
+    background-color:#9E9E9E;
+    width:7%;
+    border-radius :2%;
+    color:#D50000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 1.5%;
+    float: right;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btntop3:hover{
+    background-color:black;
+    border-radius :2%;
+    color:#D50000;
+    border:2px solid #D50000;
+}
+
+#featured4{
+   width:70%;
+   font-family: Comic Sans MS;
+   font-size:140%;
+   color:#D50000;
+   text-shadow:1px 1px 2px #6f0d16; 
+    position:absolute;
+	top:87%;
+	left:40%;
+}
+div.gallery {
+    margin: 1.5%;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 2px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+#footer4{
+    width:100%;
+    color:#757575;
+    position:absolute;
+    background-color:#9E9E9E;
+	top:140%;
+	left:0%;
+    
+}
+
+.dropdown {
+    float:right;
+    position: relative;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+#title img{
+    width:4%;
+    float:right;
+    border-radius: 50%;
+}
+#title .dropbtn{
+    float:right;
+}
+#About{
+   width:70%;
+   font-family: Comic Sans MS;
+   font-size:135%;
+   color:#D50000;
+   text-shadow:1px 1px 2px #6f0d16;
+   text-align: center; 
+    
+}
+#About2{
+   width:70%;
+   font-family: Comic Sans MS;
+   font-size:140%;
+   color:#D50000;
+   text-shadow:1px 1px 2px #6f0d16; 
+    
+}
+#edu{
+    width:25%;
+}
+.edu{
+    padding: 1%;
+    border: none;
+    border-radius:12%;
+	color: #fff;
+	background-color: green;
+}
+
+
+
+/*addRecipe.html*/
+
+#edit{
+    width:40%;
+    color:#757575;
+    padding: 0.8%;
+    border-radius:6%;
+    background-color:#9E9E9E;
+}
+#add input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2%;
+    color:black;
+    background-color:#EEEEEE;
+    display: inline-block;
+    box-sizing: border-box;
+}
+#add .post{
+    padding: 2%;
+    border: none;
+    border-radius:12%;
+	color: #fff;
+	background-color: green;
+    
+}
+
+#rec{
+width: 100%;
+background-color:#E0E0E0;
+border-radius:4%;
+
+}
+.delete{
+ padding: 2%;
+    border: none;
+    border-radius:12%;
+	color: #fff;
+	position:relative;
+	left:46%;
+	background-color: red;
+}
+.edit{
+ padding: 2%;
+    border: none;
+    border-radius:12%;
+	color: #fff;
+	position:relative;
+	left:45%;
+	background-color:olivedrab;
+}
+div > p{
+    line-height: 220%;
+    font-family: realway;
+}
+    
+
+
+
+
+
+
