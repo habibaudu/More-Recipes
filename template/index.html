@@ -4,24 +4,17 @@
 <meta  http-equiv="X-UA-compatible" content="IE=edge" />
 <meta charset ="utf-8"/>
 <title>More-Recipe</title>
-<link rel="stylesheet"  href="styles.css" type="text/css"/>
+
  <!--Import Google Icon Font  -->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <!-- Import materialize.css  -->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet"  href="styles.css" type="text/css"/>
 
 <script>
-// Get the modal
-var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
 </script>
 </head>
 <body>
@@ -34,13 +27,13 @@ window.onclick = function(event) {
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       
       <ul class="right hide-on-med-and-down" >
-        <li><a href="signup.html" class="" >signup</a></li>
-         <li><a href="signin.html" class="">signin</a></li>
+        <li><a href="signup.html" class="" >Signup</a></li>
+         <li><a href="signin.html" class="">Signin</a></li>
           <li><a href="catalog.html" class="">Catalog</a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
-    <li><a href="signup.html" class="" >signup</a></li>
-         <li><a href="signin.html" class="">signin</a></li>
+    <li><a href="signup.html" class="" >Signup</a></li>
+         <li><a href="signin.html" class="">Signin</a></li>
           <li><a href="catalog.html" class="">Catalog</a></li>
       </ul>
     
@@ -49,31 +42,83 @@ window.onclick = function(event) {
   <script>
     $(".button-collapse").sideNav();
   </script>
-
+<main>
 <!-- picture center -->
 <div class="row"  id="main">
-  <div class="col s12 m1 l1"></div>
-  <div class="col s12 m10 l10"><img class="responsive-img" src="images/res.jpg"></div>
-  <div class="col s12 m1 l1"></div>
+  <div class="col s12 m2 l2"></div>
+  <div class="col s12 m8 l8">
+
+     <!-- slide -->
+   
+     <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="images/4.jpg" class="responsive-img"/> 
+        <div class="caption center-align">
+          <h3><div id="featured">Share Your awesome Recipes</div></h3>
+          <h4 class="light grey-text text-lighten-3">To The world</h4>
+        </div>
+      </li>
+
+      <li>
+        <img src="images/yumi.jpg"> 
+        <div class="caption left-align">
+          <h3><div id="featured">sandwich By :peyton</div></h3>
+          
+        </div>
+      </li>
+      <li>
+        <img src="images/6.jpeg"> 
+        <div class="caption center-align">
+          <h3><div id="featured">We are the shield That Gaurds the realms</div></h3>
+          <h4 class="light grey-text text-lighten-3">Of the Belly</h4>
+        </div>
+      </li>
+      
+      <li>
+        <img src="images/por.jpg"> 
+        <div class="caption right-align">
+          <h3><div id="featured">Porridge By: David</div></h3>
+          
+        </div>
+      </li>
+     
+     
+    </ul>
+  
+   <script>
+   $(document).ready(function(){
+      $('.slider').slider();
+    });
+    </script>
+      <!-- end -->
+      
+  </div>
+  <div class="col s12 m2 l2"></div>
+</div>
 </div>
 
-  <div class="container">
-  <div class="row"  id="main2">
-  <div class="col s12 m6 l6" id="one"><div id="title1">More-Recipe</div></br>Add the cooked meat and vegetables and keep moving the ingredients around in the pan until they are all mixed well.
+ <div class="row">
+      <div class="col s12 m2 l2"></div>
+      <div class="col s12 m4 l4"><h6>More-Recipe</h6><div class="tex">Add the cooked meat and vegetables and keep moving the ingredients around in the pan until they are all mixed well.
  Continue doing this for another minute or two until all the ingredients are heated through and the fried rice is hot.
-  The rice should now have a lovely yellow colour from the egg. Toss through the spring onions and serve</div>
+  The rice should now have a lovely yellow colour from the egg. Toss through the spring onions and serve<a href="#"> Read More</a></div></div>
+      <div class="col s12 m4 l4"><h6>Our Story</h6><div class="tex">Add the cooked meat and vegetables and keep moving the ingredients around in the pan until they are all mixed well.
+ Continue doing this for another minute or two until all the ingredients are heated through and the fried rice is hot.
+  The rice should now have a lovely yellow colour from the egg. Toss through the spring onions and serve<a href="#"> Read More</a></div></div>
+      <div class="col s12 m2 l2"></div>
+ </div>
+
+ 
+
+  </main>
   
-  <div class="col s12 m6 l6" id="two"><div id="title2">Our Story</div></br>Add the cooked meat and vegetables and keep moving the ingredients around in the pan until they are all mixed well.
- Continue doing this for another minute or two until all the ingredients are heated through and the fried rice is hot.
-  The rice should now have a lovely yellow colour from the egg. Toss through the spring onions and serve</div>
-  </div>
-  </div>
     
   <!-- foter -->
    <footer class="page-footer black">
       
     <div class="footer-copyright">
-      <div class="container">
+      <div class="container" id="footertext">
       	© Copyright 2017. All rights reserved
       </div>
     </div>

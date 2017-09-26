@@ -1,25 +1,88 @@
-html{
-	width:100%;
-	height:100%;
-}
+body {
+     display: flex;
+     min-height: 100vh;
+     flex-direction: column;
+ }
+ main {
+     flex: 1 0 auto;
+ }
 #main{
     margin-top: 0.5%;
      background-color: #EEEEEE;
 }
 
+#main2{
+    margin-top: 0.5%;
+    
+}
+#pad{
+    padding: 20%;
+}
+#pad2{
+    padding: 20%;
+}
 
 
-
-#title1{
+div >h6{
     text-align: center;
     padding: 1%;
-    margin:1%;
 	font-family: Comic Sans MS;
 	font-size:115%;
-	color:#D50000;
-    border:1px solid #9E9E9E;
-    background-color: #616161;
+	color:white;
+    box-shadow:  1px 1px 1px black;
+    background:linear-gradient(red,black);
+	background:-o-linear-gradient(red,black);
+	background:-moz-linear-gradient(red, black);
 	text-shadow:1px 1px 2px #6f0d16; 
+}
+
+
+div >h5{
+     margin-top:1%;
+    width:100%;
+    padding: 2% 2%;
+    border: none;
+    font-size: 120%;
+    border-radius: 2%;
+    letter-spacing: 0.14em;
+    text-align: center;
+    box-sizing: border-box;
+	color:#D50000;
+    box-shadow:1px 1px 1px black;
+	background-color: white;
+   
+     
+}
+
+.lay a{
+ color: white;   
+}
+.lay{
+    text-align: center;
+    padding: 1%;
+	font-family: Comic Sans MS;
+	font-size:115%;
+	color:white;
+    box-shadow:  1px 1px 1px black;
+    background:linear-gradient(red,black);
+	background:-o-linear-gradient(red,black);
+	background:-moz-linear-gradient(red, black);
+	text-shadow:1px 1px 2px #6f0d16; 
+}
+
+
+.tex{
+    line-height: 190%;
+    font-family: realway;
+    font-size: 130%;
+    text-justify: inter-word;
+     
+}
+.tex a{
+    color:#D50000;
+}
+#footertext{
+    text-align: center;
 }
 #title2{
      text-align: center;
@@ -33,17 +96,7 @@ html{
 	text-shadow:1px 1px 2px #6f0d16; 
     
 }
-#one{
-     line-height: 175%;
-     font-size:110%;
-     color:#757575; 
-}
-#two{
-     line-height: 175%;
-     font-size:110%; 
-     color:#757575; 
-    
-}
+
 .signbtn{
     width:20%;
     padding: 2% 2%;
@@ -80,12 +133,27 @@ html{
     font-size: 100%;
     letter-spacing: 0.14em;
     box-sizing: border-box;
-    border-radius:10%;
 	color: #fff;
-    margin:3%;
-	background:linear-gradient(#D50000,black);
-	background:-o-linear-gradient(#D50000,black);
-	background:-moz-linear-gradient(#D50000, black);
+	background:linear-gradient(red,black);
+	background:-o-linear-gradient(red,black);
+	background:-moz-linear-gradient(red, black);
+   
+}
+
+.signbtn3{
+    margin-top:1%;
+    width:100%;
+    padding: 2% 2%;
+    border: none;
+    font-size: 120%;
+    border-radius: 3%;
+    letter-spacing: 0.14em;
+    box-sizing: border-box;
+	color: #000000;
+    box-shadow:1px 1px 1px black;
+	background:linear-gradient(white,white);
+	background:-o-linear-gradient(red,black);
+	background:-moz-linear-gradient(red, black);
    
 }
 
@@ -129,23 +197,29 @@ input[type=text]{
     cursor: pointer;
 	color:#9E9E9E;  
 }
+form em{
+    padding: 5%;
+    margin-left:40%;
+	font-family: Comic Sans MS;
+	font-size:230%;
+    cursor: pointer;
+	color:#D50000;
+	text-shadow:1px 1px 2px #6f0d16; 
+}
+form em:hover{
+    padding: 6%;
+	font-size:235%;
+    cursor: pointer; 
+}
+#down {
+    margin-top:5%;
+	 
+}
 
 img{
 	max-width: 100%;
     
 }
-
-img.avatar{
-    width: 20%;
-    border-radius: 50%;
-}
-
-.imgcontainer{
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
-}
-
 
 .container {
     padding:0.5%;
@@ -156,11 +230,12 @@ span.psw {
     padding-bottom: 3.5px;
 }
 
-span em{
+span .f{
 	color:#9E9E9E;
-	
-	
+}
 
+.avatar{
+    width:40%;
 }
 span a{
 	color:#D50000;
@@ -232,7 +307,11 @@ span a{
 	left:30%;
 }
 #instructions{
-font-family: realway;
+    font-family: realway;
+    line-height: 190%;
+    font-size: 130%;
+    text-justify: inter-word;
+
     
 }
 #equipment{
@@ -245,12 +324,7 @@ font-family: Comic Sans MS;
     
 
 }
-#ingredient ul li{
-    list-style: none;
-}
-#equipment ul li{
-    list-style: none;
-}
+
 #sidebar{
 width:30%;
 font-family: Comic Sans MS;
@@ -359,18 +433,8 @@ text-shadow:1px 1px 2px #6f0d16;
     width: 3%;
     cursor: pointer; 
 }
-#footer3{
-    width:100%;
-    color:#757575;
-    text-align: center;
-    display:-webkit-box;
-	-webkit-box-orient:horizontal;
-     background-color:#9E9E9E;
-    position:absolute;
-	top:265%;
-	left:0%;
-    
-}
+
+
 
 /* Myprofile.html*/
 #container{

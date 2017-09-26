@@ -11,18 +11,6 @@
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
 </head>
 <body>
     <!--Import jQuery before materialize.js -->
@@ -49,7 +37,7 @@ window.onclick = function(event) {
   <script>
     $(".button-collapse").sideNav();
   </script>
-
+  <main>
       <div class="row" id="man">
   <div class="col s12 m2 l2"> <img src="images/male.png" class="avatars" /></div>
   <div class="col s12 m8 l8 ">
@@ -64,11 +52,11 @@ window.onclick = function(event) {
       </div>
       <img src="images/up.jpg"  class="vote1" title="upvote"/>
         <img src="images/down.jpg" class="vote2"  title="downvote" /></br></br>
-    
+    </main>
   <!-- foter -->
    <footer class="page-footer black">
       
-    <div class="footer-copyright">
+    <div class="footer-copyright" id="footertext">
       <div class="container">
       	© Copyright 2017. All rights reserved
       </div>

@@ -4,25 +4,15 @@
 <meta  http-equiv="X-UA-compatible" content="IE=edge" />
 <meta charset ="utf-8"/>
 <title>More-Recipe</title>
-<link rel="stylesheet"  href="styles.css" type="text/css"/>
+
  <!--Import Google Icon Font  -->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <!-- Import materialize.css  -->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet"  href="styles.css" type="text/css"/>
     
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
 </head>
 <body>
     <!--Import jQuery before materialize.js -->
@@ -47,7 +37,7 @@ window.onclick = function(event) {
   <script>
     $(".button-collapse").sideNav();
   </script>
-
+<main>
   
    <!-- slide -->
    <div class="container" id="slidess">
@@ -57,42 +47,42 @@ window.onclick = function(event) {
         <img src="images/4.jpg" class="responsive-img"/> 
         <div class="caption center-align">
           <h3><div id="featured">Most Favourited Recipes</div></h3>
-          <h5 class="light grey-text text-lighten-3">Andela Bootcamp.com.</h5>
+          <h4 class="light grey-text text-lighten-3">Andela Bootcamp.com.</h4>
         </div>
       </li>
       <li>
         <img src="images/egusiandfufu.jpg"> 
         <div class="caption center-align">
           <h3>egusi soup and fufu: By Charles</h3>
-          <h5 class="light grey-text text-lighten-3"></h5>
+          
         </div>
       </li>
       <li>
         <img src="images/yumi.jpg"> 
         <div class="caption left-align">
           <h3>Yumi sandwich By :peyton</h3>
-          <h5 class="light grey-text text-lighten-3"></h5>
+          
         </div>
       </li>
       <li>
         <img src="images/por.jpg"> 
         <div class="caption right-align">
           <h3>Porridge By: David</h3>
-          <h5 class="light grey-text text-lighten-3"></h5>
+          
         </div>
       </li>
       <li>
         <img src="images/Jollof-Rice.jpg"> 
         <div class="caption center-align">
           <h3>Jollof Rice By: Moses</h3>
-          <h5 class="light grey-text text-lighten-3"></h5>
+          
         </div>
       </li>
       <li>
         <img src="images/beanpota.jpg"> 
         <div class="caption center-align">
           <h3>Beans and corn Porridge By: Sasha</h3>
-          <h5 class="light grey-text text-lighten-3"></h5>
+          
         </div>
       </li>
       <li>
@@ -106,21 +96,21 @@ window.onclick = function(event) {
         <img src="images/ofada-rice-sauce.jpg"> 
         <div class="caption center-align">
           <h3>Ofada rice sause  By: Kingsley</h3>
-          <h5 class="light grey-text text-lighten-3"></h5>
+          
         </div>
       </li>
       <li>
         <img src="images/Ogbono1.jpg"> 
         <div class="caption center-align">
           <h3>Obono soup  By: Sarah</h3>
-          <h5 class="light grey-text text-lighten-3"></h5>
+          
         </div>
       </li>
       <li>
         <img src="images/Edikaikong.jpg"> 
         <div class="caption center-align">
           <h3>Edikaikong  By: Daniella</h3>
-          <h5 class="light grey-text text-lighten-3"></h5>
+          
         </div>
       </li>
     </ul>
@@ -132,7 +122,25 @@ window.onclick = function(event) {
     </script>
       <!-- end -->
       
-  
+  </div>
+  <div class="container">
+  <nav class="white">
+        <div class="nav-wrapper">  
+            <ul class="hide-on-med-and-down right">               
+                <li>    
+                
+                        <div class="row" id="topbarsearch">
+                          <div class="input-field col s12 l12  red-text">
+                            <i class="red-text material-icons prefix">search</i>
+                            <input type="text" placeholder="search for Recipes" id="autocomplete-input" class="autocomplete red-text" >
+                            </div>
+                          </div>
+                                
+                  </li>                     
+            </ul>
+        </div>
+      </nav> 
+      </div>
  
 
   <div class="row">
@@ -141,57 +149,56 @@ window.onclick = function(event) {
 
     <div class="col s12 m4 l4"> </div>
     </div>
-
   <div class="row">
     <div class="col s12 m2 l2"></div>
-  <div class="col s12 m4 l4" id="one"><img src="images/ogbono1.jpg" />
-  <div id="title1"><a href="#">Obgbono by daniella</a></div>
+  <div class="col s12 m4 l4" ><img src="images/Jollof-Rice.jpg" />
+  <div class="lay"><a href="recipe.html">Jollof-Rice by daniella</a></div>
   </div>
   
-  <div class="col s12 m4 l4" id="two"><img src="images/Jollof-Rice.jpg" />
-  <div id="title2"><a href="#">Jollof-Rice by Dauda</a></div>
+  <div class="col s12 m4 l4"><img src="images/Jollof-Rice.jpg" />
+  <div class="lay"><a href="recipe.html">Jollof-Rice by Dauda</a></div>
   </div>
   <div class="col s12 m2 l2"></div>
   </div>
 
   <div class="row">
     <div class="col s12 m2 l2"></div>
-  <div class="col s12 m6 l4" id="one"><img src="images/chicken-wings-african-food.jpg" />
-  <div id="title1"><a href="#">OMaop by gabriel</a></div>
+  <div class="col s12 m6 l4"><img src="images/dataa.jpg" />
+  <div class="lay"><a href="recipe.html">OMaop by gabriel</a></div>
   </div>
   
-  <div class="col s12 m4 l4" id="two"><img src="images/dataa.jpg" />
-  <div id="title2"><a href="#">ladet by anah</a></div>
+  <div class="col s12 m4 l4"><img src="images/dataa.jpg" />
+  <div class="lay"><a href="recipe.html">OMaop by anah</a></div>
   </div>
   <div class="col s12 m2 l2"></div>
    </div>
 
    <div class="row">
      <div class="col s12 m2 l2"></div>
-  <div class="col s12 m4 l4" id="one"><img src="images/Ogbono1.jpg" />
-  <div id="title1"><a href="#">Obono by daniella</a></div>
+  <div class="col s12 m4 l4"><img src="images/BiltongStew.jpg" />
+  <div class="lay"><a href="recipe.html">Biltong stew by daniella</a></div>
   </div>
   
-  <div class="col s12 m4 l4" id="two"><img src="images/BiltongStew.jpg" />
-  <div id="title2"><a href="#">Biltong Stew by Aisha</a></div>
+  <div class="col s12 m4 l4"><img src="images/BiltongStew.jpg" />
+  <div class="lay"><a href="recipe.html">Biltong Stew by Aisha</a></div>
   </div>
   <div class="col s12 m2 l2"></div>
    </div>
    
    <div class="row">
      <div class="col s12 m2 l2"></div>
-  <div class="col s12 m4 l4" id="one"><img src="images/borros.jpg" />
-  <div id="title1"><a href="#">boros by daniella</a></div>
+  <div class="col s12 m4 l4"><img src="images/borros.jpg" />
+  <div class="lay"><a href="recipe.html">boros by daniella</a></div>
   </div>
   
-  <div class="col s12 m4 l4" id="two"><img src="images/borros.jpg" />
-  <div id="title2"><a href="#">borros by Mariam</a></div>
+  <div class="col s12 m4 l4"><img src="images/borros.jpg" />
+  <div class="lay"><a href="#">borros by Mariam</a></div>
   </div>
   <div class="col s12 m2 l2"></div>
    </div>
   
 
-  </div>
+  
     <div class="row">
       <div class="col s12 m4 l4"> </div>
     <div class="col s12 m4 m4"><button class="signbtn2">Show more</button></div>
@@ -199,10 +206,10 @@ window.onclick = function(event) {
     <div class="col s12 m4 l4"> </div>
     </div>
  
-
+</main>
    <footer class="page-footer black">
        
-    <div class="footer-copyright">
+    <div class="footer-copyright" id="footertext">
       <div class="container">
       	© Copyright 2017. All rights reserved
       </div>
