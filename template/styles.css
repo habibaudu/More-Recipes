@@ -7,7 +7,7 @@ body {
      flex: 1 0 auto;
  }
 #main{
-    margin-top: 0.5%;
+    margin-top: 0%;
      background-color: #EEEEEE;
 }
 
@@ -25,7 +25,8 @@ body {
 
 div >h6{
     text-align: center;
-    padding: 1%;
+    padding: 3%;
+    border-radius: 2%;
 	font-family: Comic Sans MS;
 	font-size:115%;
 	color:white;
@@ -59,7 +60,7 @@ div >h5{
 }
 .lay{
     text-align: center;
-    padding: 1%;
+    padding: 2%;
 	font-family: Comic Sans MS;
 	font-size:115%;
 	color:white;
@@ -69,20 +70,36 @@ div >h5{
 	background:-moz-linear-gradient(red, black);
 	text-shadow:1px 1px 2px #6f0d16; 
 }
+#ani input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#ani input[type=text]:focus {
+    width: 100%;
+}
 
 
 .tex{
     line-height: 190%;
     font-family: realway;
-    font-size: 130%;
-    text-justify: inter-word;
-     
+    font-size: 130%;    
 }
 .tex a{
     color:#D50000;
 }
 #footertext{
-    text-align: center;
+    margin-top : -18px;
 }
 #title2{
      text-align: center;
@@ -99,12 +116,12 @@ div >h5{
 
 .signbtn{
     width:20%;
-    padding: 2% 2%;
+    padding: 0.8% 0.8%;
     border: none;
     font-size: 100%;
     letter-spacing: 0.14em;
     box-sizing: border-box;
-    border-radius:10%;
+    border-radius:3%;
 	color: #fff;
 	float: right;
 	background:linear-gradient(#D50000,black);
@@ -114,12 +131,12 @@ div >h5{
 }
 .editbtn{
     width:20%;
-    padding: 2% 2%;
+    padding: 0.8% 0.8%;
     border: none;
     font-size: 100%;
     letter-spacing: 0.14em;
     box-sizing: border-box;
-    border-radius:10%;
+    border-radius:3%;
 	color: #fff;
 	background:linear-gradient(green,black);
 	background:-o-linear-gradient(green,black);
@@ -140,10 +157,23 @@ div >h5{
    
 }
 
+.signbtn4{
+    width:100%;
+    padding: 2% 2%;
+    border: none;
+    font-size:110%;
+    font-size: 100%;
+    letter-spacing: 0.14em;
+    box-sizing: border-box;
+	color: #D50000;
+	
+   
+}
+
 .signbtn3{
     margin-top:1%;
     width:100%;
-    padding: 2% 2%;
+    padding: 0.8% 0.8%;
     border: none;
     font-size: 120%;
     border-radius: 3%;
@@ -181,12 +211,12 @@ input[type=text]{
 }
 
 .nav-wrapper em{
-    padding: 0.5%;
+    padding: 1%;
     margin:1%;
     border-radius: 50%;
 	width:50%;
 	font-family: Comic Sans MS;
-	font-size:150%;
+	font-size:157%;
     cursor: pointer;
 	color:#D50000;
 	text-shadow:1px 1px 2px #6f0d16; 
@@ -198,10 +228,10 @@ input[type=text]{
 	color:#9E9E9E;  
 }
 form em{
-    padding: 5%;
+    padding: 6%;
     margin-left:40%;
 	font-family: Comic Sans MS;
-	font-size:230%;
+	font-size:235%;
     cursor: pointer;
 	color:#D50000;
 	text-shadow:1px 1px 2px #6f0d16; 
@@ -497,16 +527,6 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
-}
-
-#footer4{
-    width:100%;
-    color:#757575;
-    position:absolute;
-    background-color:#9E9E9E;
-	top:140%;
-	left:0%;
-    
 }
 
 .dropdown {
