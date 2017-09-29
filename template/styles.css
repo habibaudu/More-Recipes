@@ -143,6 +143,10 @@ div >h5{
 	background:-moz-linear-gradient(green, black);
    
 }
+
+.colss{
+    color:black;
+}
 .signbtn2{
     width:100%;
     padding: 2% 2%;
