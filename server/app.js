@@ -1,23 +1,29 @@
-import  express from  "express";
-import  logger from  "morgan";
-import  bodyParser from  "body-parser";
-import route from "./server1/routes";
+import express from "express";
+import logger from "morgan";
+import bodyParser from "body-parser"
 
+// express app set up
 
 const app = express();
 
-// Log requests to the console.
+// log request to the console
+
 app.use(logger('dev'));
 
-// Parse incoming requests data (https://github.com/expressjs/body-parser)
+// parsing incomming request data
+
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
 
-route(app);
+app.use(bodyParser.urlencoded({extended:false}));
 
-// Setup a default catch-all route that sends back a welcome message in JSON format.
-app.get('*', (req, res) => res.status(200).send({
-  message: 'Welcome to the beginning of nothingness.',
+
+ require('./server/routes')(app);
+ 
+ //if no route match the url that was supplied, these will be executed
+app.get('*', (req,res) => res.status(200).send({  
+    message :'Welcome to our More-Recipes Api',
 }));
 
 export default app;
+
+

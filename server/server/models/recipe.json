@@ -1,0 +1,42 @@
+[
+  {
+    "id":1,
+    "recipe":"Fried Rice",
+    "Ingredient":"rice,cabage",
+    "Equipment":"pot,knives",
+    "user":"boss",
+    "reviews":[],
+    "upvotes":15
+  },
+
+  {
+    "id":2,
+    "recipe":"Porridge",
+    "Ingredient":"yam,oil",
+    "Equipment":"pot,knives",
+    "user":"mariam",
+    "reviews":[],
+    "upvotes":17
+  },
+
+  {
+    "id":3,
+    "recipe":"garri",
+    "Ingredient":"sugar,nutt",
+    "Equipment":"cup,spoon",
+    "user":"lucas2",
+    "reviews":[],
+    "upvotes":12
+  },
+  
+  {
+    "id":4,
+    "recipe":"plantain",
+    "Ingredient":"sugar,nutt",
+    "Equipment":"cup,spoon",
+    "user":"lucas",
+    "reviews":[],
+    "upvotes":20
+  }
+
+]

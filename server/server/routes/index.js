@@ -1,33 +1,28 @@
 
-global.recipe=[
-  {
-    "id":1,
-    "recipe":"Fried Rice",
-    "Ingredient":"rice,cabage",
-    "Equipment":"pot,knives",
-    "user":"boss",
-    "upvote":"15"
-  },
-
-  {
-    "id":2,
-    "recipe":"Porridge",
-    "Ingredient":"yam,oil",
-    "Equipment":"pot,knives",
-    "user":"mariam",
-    "upvote":"17"
-  }
-
-]
+import recipejson from "../models/recipe.json";
 
 module.exports = (app) => {
+  let sortedDate;
   app.get('/api', (req, res) => res.status(200).send({
     message: 'Welcome to the Recipes API!',
   }));
+  
 
   app.get("/api/recipes",function(req,res){
+     if (req.query.sort=="upvotes" && req.query.order === "desc" ) {
+          
+        sortedDate = recipejson;
+              var sorted = sortedDate.sort(function (a, b) { 
+                 return b.upvotes - a.upvotes 
+                });
+          var sorted2 = sorted.slice(0, 2);
+       
+
+      return res.status(200).json(sorted2);
+       }
+else
      return res.json({
-       recipe:global.recipe,
+       recipe:recipejson,
        error:false
      });
   });
@@ -36,55 +31,68 @@ module.exports = (app) => {
     if(!req.body.user){
 
       return res.json({
-        message:"User name missing",
+        message:"No recipe added",
         error:true
       });
     }
-    global.recipe.push(req.body);
+    recipejson.push(req.body);
     return res.json({
-      message:"success",
+      message:"Created successfully",
       error:false
     });
-
- 
 
   });
 
    app.delete("/api/recipes/:recipesid",function(req,res){
-       for(let i=0; i < global.recipe.length; i++){
-         if(global.users[i].id === parseInt(req.params.recipeid,10)){
-           global.recipe.splice(i,1);
+       for(let i=0; i < recipejson.length; i++){
+         if(recipejson[i].id === parseInt(req.params.recipeid,10)){
+           recipejson.splice(i,1);
            return res.json({
-             message:"success",
+             message:"deleted successfully",
              error:false
            });
          }
        }
 
        return res.status(404).json({
-         message:"User not found",
+         message:"Recipe not found",
          error:true
        });
    });
 
    app.put("/api/recipes/:recipeid",function(req,res){
-       for(let i=0; i< global.users.length; i++){
-         if(global.recipe[i].id === parseInt(req.params.recipeid,10)){
-           global.recipe[i].recipe = req.body.name;
-           global.recipe[i].hobby = req.body.hobby;
+       for(let i=0; i< recipejson.length; i++){
+         if(recipejson[i].id === parseInt(req.params.recipeid,10)){
+           recipejson[i].recipe = req.body.recipe;
+           recipejson[i].hobby = req.body.hobby;
            return res.json({
-             message :"sucess",
+             message :"updated sucessfully",
              error:false
            });
          }
        }
        return res.status(404).json({
-         message:"User not found",
+         message:"Recipe not found",
          error:true
        });
    });
-  // For any other request method on todo items, we're going to return "Method Not Allowed"
-  app.all('/api/todos/:todoId/items', (req, res) =>
+
+   app.post("/api/recipes/:recipeid/reviews",function(req,res){
+      for(let i=0; i< recipejson.length; i++){
+         if(recipejson[i].id === parseInt(req.params.recipeid,10)){
+           recipejson[i].reviews.push(req.body);
+           return res.json({
+             message :"Reviews Created sucessfully",
+             error:false
+           });
+         }
+       }
+           
+   });
+
+
+  // For any other request method on Recipes , we're going to return "Method Not Allowed"
+  app.all('/api/recipes/:RecipeId/', (req, res) =>
     res.status(405).send({
       message: 'Method Not Allowed',
   }));
