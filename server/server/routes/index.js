@@ -12,10 +12,10 @@ module.exports = (app) => {
      if (req.query.sort=="upvotes" && req.query.order === "desc" ) {
           
         sortedDate = recipejson;
-              var sorted = sortedDate.sort(function (a, b) { 
+              let sorted = sortedDate.sort(function (a, b) { 
                  return b.upvotes - a.upvotes 
                 });
-          var sorted2 = sorted.slice(0, 2);
+          let sorted2 = sorted.slice(0, 2);
        
 
       return res.status(200).json(sorted2);
