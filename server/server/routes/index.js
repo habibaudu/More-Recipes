@@ -1,6 +1,5 @@
 
 import recipejson from "../models/recipe.json";
-
 module.exports = (app) => {
   let sortedDate;
   app.get('/api', (req, res) => res.status(200).send({
@@ -43,9 +42,9 @@ else
 
   });
 
-   app.delete("/api/recipes/:recipesid",function(req,res){
+   app.delete("/api/recipes/:recipeId",function(req,res){
        for(let i=0; i < recipejson.length; i++){
-         if(recipejson[i].id === parseInt(req.params.recipeid,10)){
+         if(recipejson[i].id === parseInt(req.params.recipeId,10)){
            recipejson.splice(i,1);
            return res.json({
              message:"deleted successfully",
@@ -60,11 +59,11 @@ else
        });
    });
 
-   app.put("/api/recipes/:recipeid",function(req,res){
+   app.put("/api/recipes/:recipeId",function(req,res){
        for(let i=0; i< recipejson.length; i++){
-         if(recipejson[i].id === parseInt(req.params.recipeid,10)){
+         if(recipejson[i].id === parseInt(req.params.recipeId,10)){
            recipejson[i].recipe = req.body.recipe;
-           recipejson[i].hobby = req.body.hobby;
+           recipejson[i].Ingredient = req.body.Ingredient;
            return res.json({
              message :"updated sucessfully",
              error:false
@@ -77,9 +76,9 @@ else
        });
    });
 
-   app.post("/api/recipes/:recipeid/reviews",function(req,res){
+   app.post("/api/recipes/:recipeId/reviews",function(req,res){
       for(let i=0; i< recipejson.length; i++){
-         if(recipejson[i].id === parseInt(req.params.recipeid,10)){
+         if(recipejson[i].id === parseInt(req.params.recipeId,10)){
            recipejson[i].reviews.push(req.body);
            return res.json({
              message :"Reviews Created sucessfully",
