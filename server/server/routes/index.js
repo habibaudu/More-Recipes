@@ -1,5 +1,5 @@
-
-import recipejson from "../models/recipe.json";
+const  recipejson = require("../models/recipe.json");
+// import recipejson from "../models/recipe.json";
 module.exports = (app) => {
   let sortedDate;
   app.get('/api', (req, res) => res.status(200).send({
@@ -7,7 +7,7 @@ module.exports = (app) => {
   }));
   
 
-  app.get("/api/recipes",function(req,res){
+  app.get("/api/recipes",(req,res)=>{
      if (req.query.sort=="upvotes" && req.query.order === "desc" ) {
           
         sortedDate = recipejson;
@@ -26,8 +26,8 @@ else
      });
   });
 
-  app.post("/api/recipes",function(req,res){
-    if(!req.body.user){
+  app.post("/api/recipes",(req,res)=>{
+    if(!req.body.user  && !req.body.recipe){
 
       return res.json({
         message:"No recipe added",
@@ -42,7 +42,7 @@ else
 
   });
 
-   app.delete("/api/recipes/:recipeId",function(req,res){
+   app.delete("/api/recipes/:recipeId",(req,res)=>{
        for(let i=0; i < recipejson.length; i++){
          if(recipejson[i].id === parseInt(req.params.recipeId,10)){
            recipejson.splice(i,1);
@@ -59,7 +59,7 @@ else
        });
    });
 
-   app.put("/api/recipes/:recipeId",function(req,res){
+   app.put("/api/recipes/:recipeId",(req,res)=>{
        for(let i=0; i< recipejson.length; i++){
          if(recipejson[i].id === parseInt(req.params.recipeId,10)){
            recipejson[i].recipe = req.body.recipe;
@@ -76,7 +76,7 @@ else
        });
    });
 
-   app.post("/api/recipes/:recipeId/reviews",function(req,res){
+   app.post("/api/recipes/:recipeId/reviews",(req,res)=>{
       for(let i=0; i< recipejson.length; i++){
          if(recipejson[i].id === parseInt(req.params.recipeId,10)){
            recipejson[i].reviews.push(req.body);
@@ -89,9 +89,8 @@ else
            
    });
 
-
   // For any other request method on Recipes , we're going to return "Method Not Allowed"
-  app.all('/api/recipes/:RecipeId/', (req, res) =>
+  app.all('/api/recipes/:RecipeId/',(req, res) =>
     res.status(405).send({
       message: 'Method Not Allowed',
   }));
