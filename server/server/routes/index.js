@@ -26,7 +26,7 @@ else
   });
 
   app.post("/api/recipes",(req,res)=>{
-    if(!req.body.user  && !req.body.recipe){
+    if(!req.body.user  && !req.body.name && !req.body.id && !req.body.Description && !req.body.Ingredient){
 
       return res.json({
         message:"No recipe added",

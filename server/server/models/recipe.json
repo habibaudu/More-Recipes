@@ -1,9 +1,9 @@
 [
   {
     "id":1,
-    "recipe":"Fried Rice",
+    "name":"Fried Rice",
     "Ingredient":"rice,cabage",
-    "Equipment":"pot,knives",
+    "Description":"Boil water",
     "user":"boss",
     "reviews":[],
     "upvotes":15
@@ -11,9 +11,9 @@
 
   {
     "id":2,
-    "recipe":"Porridge",
+    "name":"Porridge",
     "Ingredient":"yam,oil",
-    "Equipment":"pot,knives",
+    "Description":"Boil water",
     "user":"mariam",
     "reviews":[],
     "upvotes":17
@@ -21,9 +21,9 @@
 
   {
     "id":3,
-    "recipe":"garri",
+    "name":"garri",
     "Ingredient":"sugar,nutt",
-    "Equipment":"cup,spoon",
+    "Description":"boil water",
     "user":"lucas2",
     "reviews":[],
     "upvotes":12

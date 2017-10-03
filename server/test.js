@@ -29,7 +29,7 @@ describe('Recipes', () => {
                    id:5,
                    recipe:"Corn flakes",
                    Ingredient:"milk,sugar",
-                   Equipment:"spoon, cup",
+                   Description:"Boil water",
                    user:"Charity",
                    reviews:[],
                    upvotes:17
