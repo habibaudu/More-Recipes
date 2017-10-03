@@ -1,11 +1,7 @@
-(function(){
-  'use strict';
-  
-const expect = require('chai').expect;
 
-let chaiHttp = require('chai-http');
-let server = require("./app.js")
-let chai = require('chai');
+import chaiHttp from "chai-http";
+import server  from "./app.js";
+import chai, { expect } from "chai";
 let should = chai.should();
 
 chai.use(chaiHttp);
@@ -90,4 +86,3 @@ describe('Recipes', () => {
   
 
 });
-})();

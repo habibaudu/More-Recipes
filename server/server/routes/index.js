@@ -1,5 +1,4 @@
-const  recipejson = require("../models/recipe.json");
-// import recipejson from "../models/recipe.json";
+import recipejson from "../models/recipe.json";
 module.exports = (app) => {
   let sortedDate;
   app.get('/api', (req, res) => res.status(200).send({
