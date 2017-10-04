@@ -11,23 +11,23 @@ module.exports = {
         allowNull: false,
         type: Sequelize.STRING
       },
-       Ingredient: {
+      Ingredient: {
         allowNull: false,
         type: Sequelize.STRING
       },
-       Description: {
+      Description: {
         allowNull: false,
         type: Sequelize.TEXT
       },
-      upVotes:{
+      upVotes: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        default:0
-       },
-      downVotes:{
+        default: 0
+      },
+      downVotes: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        default:0
+        default: 0
       },
       createdAt: {
         allowNull: false,
@@ -37,7 +37,7 @@ module.exports = {
         allowNull: false,
         type: Sequelize.DATE
       },
-       recipeId: {
+      recipeId: {
         type: Sequelize.INTEGER,
         onDelete: 'CASCADE',
         references: {
@@ -45,7 +45,7 @@ module.exports = {
           key: 'id',
           as: 'userId',
         },
-       }
+      }
     });
   },
   down: (queryInterface, Sequelize) => {

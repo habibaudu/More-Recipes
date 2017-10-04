@@ -9,14 +9,10 @@ module.exports = (app) => {
   app.get('/api/recipes', (req, res) => {
     if (req.query.sort === 'upvotes' && req.query.order === 'desc') {
       sortedDate = recipejson;
-      const sorted = sortedDate.sort((a, b) => {
-        return b.upvotes - a.upvotes;
-      });
+      const sorted = sortedDate.sort((a, b) => b.upvotes - a.upvotes);
       const sorted2 = sorted.slice(0, 2);
       return res.status(200).json(sorted2);
-    }
-
-    else if (!req.query.sort === 'upvotes' && !req.query.order === 'desc') {
+    } else if (!req.query.sort === 'upvotes' && !req.query.order === 'desc') {
       return res.json({
         recipe: recipejson,
         error: false

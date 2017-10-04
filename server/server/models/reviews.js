@@ -12,18 +12,16 @@ module.exports = (sequelize, DataTypes) => {
     },
   });
 
-  Reviews.associate = (models) => 
-      Reviews.BelongsTo(models.Recipes, {
-        foreignKey: 'recipeId',
-         onDelete: 'CASCADE',
-      });
-  
-   Reviews.associate=(models)=> 
-      Reviews.BelongsTo(models.Users,{
-        foreignKey: 'UserId',
-        as: Reviews
-      });
-   
+  Reviews.associate = models =>
+    Reviews.BelongsTo(models.Recipes, {
+      foreignKey: 'recipeId',
+      onDelete: 'CASCADE',
+    });
+  Reviews.associate = models =>
+    Reviews.BelongsTo(models.Users, {
+      foreignKey: 'UserId',
+      as: Reviews
+    });
+
   return Reviews;
-  
 };

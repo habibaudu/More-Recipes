@@ -22,24 +22,24 @@ module.exports = {
       email: {
         type: Sequelize.STRING,
         allowNull: false,
-            validate: {
-                isEmail: true
-            }
-     },
-     password: {
-            type: Sequelize.STRING,
-            allowNull: false
-    },
+        validate: {
+          isEmail: true
+        }
+      },
+      password: {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
 
-    lastLogin: {
-            type: Sequelize.DATE,
-            allowNull: false
-        },
+      lastLogin: {
+        type: Sequelize.DATE,
+        allowNull: false
+      },
 
-     status: {
-            type: Sequelize.ENUM('active', 'inactive'),
-            defaultValue: 'active'
-          },
+      status: {
+        type: Sequelize.ENUM('active', 'inactive'),
+        defaultValue: 'active'
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

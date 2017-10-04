@@ -39,18 +39,17 @@ module.exports = (sequelize, DataTypes) => {
       defaultValue: 'active'
     },
   });
- 
-   Users.associate=(models)=>
-      Users.hasMany(models.Recipes,{
-        foreignKey: "userId",
-         as: Recipes
-      });
 
-   Users.associate=(models)=>
-      Users.hasMany(models.Reviews,{
-        foreignKey: "userId",
-        as: Reviews
-      });
-     
+  Users.associate = models =>
+    Users.hasMany(models.Recipes, {
+      foreignKey: 'userId',
+      as: 'recipes'
+    });
+
+  Users.associate = models =>
+    Users.hasMany(models.Reviews, {
+      foreignKey: 'userId',
+      as: 'reviews'
+    });
   return Users;
 };
