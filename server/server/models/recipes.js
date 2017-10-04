@@ -1,47 +1,44 @@
 module.exports = (sequelize, DataTypes) => {
   const Recipes = sequelize.define('Recipes', {
-    recipeId:{
+    recipeId: {
       autoIncrement: true,
       primaryKey: true,
       type: DataTypes.INTEGER,
       allowNull: false
     },
-    name:{
+    name: {
       type: DataTypes.STRING,
       allowNull: false
     },
-
-    Ingredient:{
+    Ingredient: {
       type: DataTypes.STRING,
       allowNull: false
-    
-    }, 
-    Description:{
-    type: DataTypes.TEXT,
-    allowNull: false
-    
     },
-   upVotes:{
-    type: DataTypes.INTEGER,
-    allowNull: false,
-    default:0
-   },
-    downVotes:{
-    type: DataTypes.INTEGER,
-    allowNull: false,
-    default:0
-  },
+    Description: {
+      type: DataTypes.TEXT,
+      allowNull: false
+    },
+    upVotes: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      default: 0
+    },
+    downVotes: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      default: 0
+    },
   });
-  
-    Recipes.associate=(models)=>
+
+  Recipes.associate = (models) =>
       Recipes.BelongsTo(models.Users,{
-        foreignKey: "userId",
+        foreignKey: 'userId',
          onDelete: 'CASCADE',
       });
 
-   Recipes.associate=(models)=>
+   Recipes.associate = (models) =>
       Recipes.hasMany(models.Reviews,{
-        foreignKey: "recipeId",
+        foreignKey: 'recipeId',
         as: Reviews
       });
      
