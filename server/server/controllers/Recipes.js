@@ -1,30 +1,29 @@
 import models from '../models';
 
-const User = models.Users;
+// const User = models.Users;
 const Recipes = models.Recipes;
 
 export default {
   createRecipes(req, res) {
     return Recipes
       .create({
-
         name: req.body.name,
         Ingredient: req.body.Ingredient,
         Description: req.body.Description,
         upVotes: req.body.upVotes,
         downVotes: req.body.downVotes,
       })
-      .then(recipes => res.status(201).send(recipes)) //working
+      .then(recipes => res.status(201).send(recipes)) // working
       .catch(error => res.status(400).send(error));
   },
 
-
-  updateRecipes(req, res) {
+  update(req, res) {
     return Recipes
-      .findById(req.params.id, {
-        include: [{
-          model: User,
-        }],
+      .find({
+        where: {
+          id: req.params.recipeId,
+
+        },
       })
       .then((recipes) => {
         if (!recipes) {
@@ -45,9 +44,9 @@ export default {
       .catch(error => res.status(400).send(error));
   },
 
-  deleteRecipes(req, res) {
+  destroy(req, res) {
     return Recipes
-      .findById(req.params.id)
+      .findById(req.params.recipeId)
       .then((recipes) => {
         if (!recipes) {
           return res.status(400).send({
@@ -55,7 +54,7 @@ export default {
           });
         }
         return recipes
-          .delete()
+          .destroy()
           .then(() => res.status(204).send())
           .catch(error => res.status(400).send(error));
       })
@@ -63,9 +62,16 @@ export default {
   },
 
   listRecipes(req, res) {
+    let sortRecipes;
+    if (req.query.sort === 'upvotes' && req.query.order === 'desc') {
+      sortRecipes = Recipes.upVotes;
+      const sorted = sortRecipes.sort((a, b) => b.upVotes - a.upVotes);
+      const sorted2 = sorted.slice(0, 10);
+      return res.status(200).json({ sorted2 });
+    }
     return Recipes
       .all()
-      .then(recipes => res.status(200).send(recipes))  //working
+      .then(recipes => res.status(200).send(recipes)) // working
       .catch(error => res.status(400).send(error));
   },
 };

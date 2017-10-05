@@ -43,7 +43,7 @@ module.exports = {
         references: {
           model: 'Recipes',
           key: 'id',
-          as: 'userId',
+          as: 'recipeId',
         },
       }
     });
