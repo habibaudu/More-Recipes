@@ -7,7 +7,8 @@ module.exports = {
       type: Sequelize.INTEGER
     },
     userReview: {
-      type: Sequelize.TEXT
+      type: Sequelize.TEXT,
+      allowNull: false
     },
     createdAt: {
       allowNull: false,

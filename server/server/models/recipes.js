@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
   const Recipes = sequelize.define('Recipes', {
-    recipeId: {
+    id: {
       autoIncrement: true,
       primaryKey: true,
       type: DataTypes.INTEGER,
@@ -31,7 +31,7 @@ module.exports = (sequelize, DataTypes) => {
   });
 
   Recipes.associate = models =>
-    Recipes.BelongsTo(models.Users, {
+    Recipes.belongsTo(models.Users, {
       foreignKey: 'userId',
       onDelete: 'CASCADE',
     });
