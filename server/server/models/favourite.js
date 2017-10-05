@@ -1,3 +1,4 @@
+import { Users, Recipes } from './recipes';
 
 module.exports = (sequelize, DataTypes) => {
   const Favourite = sequelize.define('Favourite', {
@@ -8,20 +9,19 @@ module.exports = (sequelize, DataTypes) => {
     recipeId: {
       type: DataTypes.STRING,
       allowNull: false
-    }, 
-});
-  Favourite.associate = models =>
-    Users.hasMany(models.Favourite), {
-    foreignKey: 'userId',
-    onDelete: 'CASCADE'
+    }
+  });
+  Favourite.associate = (models) => {
+    Favourite.belongsTo(models.Users, {
+      foreignKey: 'userId',
+      onDelete: 'CASCADE'
     });
-  
-  Favourite.associate = models =>
-    Recipes.hasMany(models.Favourite, {
+  };
+
+  Favourite.associate = (models) => {
+    Favourite.belongsTo(models.Recipes, {
       foreignKey: 'recipeId'
-      
     });
-  
-    
+  };
   return Favourite;
 };

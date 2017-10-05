@@ -1,3 +1,5 @@
+import { Users } from './recipes';
+
 module.exports = (sequelize, DataTypes) => {
   const Voting = sequelize.define('Voting', {
     userId: {
@@ -17,18 +19,17 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false
     },
   },
-); 
+  );
   Voting.associate = models =>
-    Users.hasOne(models.Voting), {
-    foreignKey: 'userId',
-    onDelete: 'CASCADE'
-  });
+    Users.hasOne(models.Voting, {
+      foreignKey: 'userId',
+      onDelete: 'CASCADE'
+    });
 
   Voting.associate = models =>
     Voting.belongsTo(models.Recipes, {
       foreignKey: 'recipeId',
-      
     });
-  
+
   return Voting;
 };
