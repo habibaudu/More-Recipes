@@ -17,7 +17,10 @@ export default {
         password,
         email: req.body.email
       })
-      .then(user => res.status(201).send(user))
+      .then(user => res.status(201).send({ firstname: user.firstName,
+        lastname: user.lastName,
+        username: user.username,
+        email: user.email, }))
       .catch(error => res.status(400).send(error));
   },
 
