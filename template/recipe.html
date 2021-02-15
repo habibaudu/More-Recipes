@@ -39,11 +39,50 @@
   <script>
     $(".button-collapse").sideNav();
   </script>
-    <div class="row"  id="main">
-  <div class="col s12 m4 l4">
-      <div id="ingredient">
-      <em>Ingredients</em>
-      <ul>
+  <main>
+   <div class="row"  id="main">
+  <div class="col s12 m2 l2"></div>
+  <div class="col s12 m8 l8">
+
+     <!-- slide -->
+   
+     <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="images/yumi.jpg" class="responsive-img"/> 
+        <div class="caption center-align">
+          <h3><div id="featured"></div></h3>
+          
+        </div>
+      </li>
+      <li>
+        <img src="images/4.jpg" class="responsive-img"/> 
+        <div class="caption center-align">
+          <h3><div id="featured">Recipe for sandwitch</div></h3>
+          
+        </div>
+      </li>
+     
+    </ul>
+  
+   <script>
+   $(document).ready(function(){
+      $('.slider').slider();
+    });
+    </script>
+      <!-- end -->
+      
+  </div>
+  <div class="col s12 m2 l2"></div>
+</div>
+</div>
+
+
+<div class="row">
+      <div class="col s12 m2 l2"></div>
+      <div class="col s12 m4 l4"><h6>Ingredients</h6><div class="tex">
+        
+               <ul>
 <li>2 cigar cups | 500g long grain parboiled rice</li>
 Vegetable Oil
 <li>Chicken (whole chicken or chicken drumsticks)
@@ -54,106 +93,95 @@ Vegetable Oil
 <li>1 handful sweet corn</li>
 <li>3 tablespoons diced red bell pepper (NOT tatashe)
 Salt (to taste)</li>
-</ul>
-  </div>
-  </div>
-  <div class="col s12 m4 l4"><img class="responsive-img" src="images/friedrice.jpg"></div>
-  <div class="col s12 m4 l4">
-
-      <div id="equipment">
-      <em>Equipment</em>
-      <ul>
+</ul> 
+        </div></div>
+      <div class="col s12 m4 l4"><h6>Equipment</h6><div class="tex">
+           <ul>
 <li>non-stick frying pan or wot</li>
 <li>statula</li>
 <li>Chopping board</li>
 <li>sharp knives</li>
-  </div>
-  </div>
-</div>
+       </ul>
+        </div></div>
+      <div class="col s12 m2 l2"></div>
+ </div>
 
-<div class="row">
-    <div class="col s12 m7 l7"> 
-          <div id="instructions" class="center-align">
-  <em>instructions</em>
-  <p>Heat your pan until it is very hot. Add your oil to the pan and swirl it around until the pan is coated. Pour out any excess oil.</p>
+ <div class="row">  
+   <div class="col s12 m2 l2"></div>
+   <div class="col s12 m8 l8"><h5>Instruction</h5><div class="tex">
+  <ul>
+     <li>Heat your pan until it is very hot. Add your oil to the pan and swirl it around until the pan is coated. Pour out any excess oil.</li>
 
-<p>Beat your eggs with a fork until the yolk and whites are mixed then pour them into the hot pan.</p>
+<li>Beat your eggs with a fork until the yolk and whites are mixed then pour them into the hot pan.</li>
 
-<p>When the egg is cooked, add the rice to the pan and start moving the egg and rice around so that it is always moving and doesn't have a chance to stick to the pan. 
-Use your ladle or spoon to "beat" the rice so the grains start to separate and begin to be coated with egg.</p>
+<li>When the egg is cooked, add the rice to the pan and start moving the egg and rice around so that it is always moving and doesn't have a chance to stick to the pan. 
+Use your ladle or spoon to "beat" the rice so the grains start to separate and begin to be coated with egg.</li>
 
-<p>Add the salt and chicken stock powder and mix well. It's important to make sure these flavours are evenly distributed.</p>
+<li>Add the salt and chicken stock powder and mix well. It's important to make sure these flavours are evenly distributed.</li>
 
 
-<p>Add the cooked meat and vegetables and keep moving the ingredients around in the pan until they are all mixed well.
+<li>Add the cooked meat and vegetables and keep moving the ingredients around in the pan until they are all mixed well.
  Continue doing this for another minute or two until all the ingredients are heated through and the fried rice is hot.
-  The rice should now have a lovely yellow colour from the egg. Toss through the spring onions and serve.</p>
-  <br>BY : frank edwards.</br> </br>
-
-  <img src="images/up.jpg"  class="svote1" title="upvote"/>
- <img src="images/down.jpg" class="svote2" title="downvote"/>
- <img src="images/favo.jpg"   title="Favorite This" width="20"/>
- <img src="images/favo.jpg"   title="Favorite This" width="20"/>
- <img src="images/favo.jpg"   title="Favorite This" width="20"/>
- <img src="images/favo.jpg"   title="Favorite This" width="20"/>
- <img src="images/favo2.jpg"   title="rate" width="20"/>
- 
- </br></br>
-  <div>
-    <form>
-<input type="text" placeholder="Write the title of your review" name="review" required=""  /><br>
-        <textarea id="icon_prefix2" class="materialize-textarea" >
-        </textarea>
-        <button class="signbtn" type="submit">Post</button>
-        </form>
-        </div>
-
-        
-
+  The rice should now have a lovely yellow colour from the egg. Toss through the spring onions and serve.</li>
   </div>
+  <br>BY : frank edwards. </br> <i class="small material-icons">arrow_drop_down</i>
+ <i class="small material-icons">arrow_drop_up</i>
+ <img src="images/favo.jpg"   title="Favorite This" width="20"/>
+ <img src="images/favo.jpg"   title="Favorite This" width="20"/>
+ <img src="images/favo.jpg"   title="Favorite This" width="20"/>
+ <img src="images/favo.jpg"   title="Favorite This" width="20"/>
+ <img src="images/favo2.jpg"   title="rate" width="20"/>
+     
+     </div></div>
+   <div id="col s12 m2 l2"></div>
+   
     </div>
-    <div class="col s12 m2 l2"></div>
-     <div class="col s12 m3 l3">
-         <div id="featured">Featured Recipes</div>
-         <img src="images/ogbono1.jpg" /> 
-     <img src="images/favo.jpg"   title="Favorite This" width="20"/>
- <img src="images/favo.jpg"   title="Favorite This" width="20"/>
- <img src="images/favo.jpg"   title="Favorite This" width="20"/>
- <img src="images/favo.jpg"   title="Favorite This" width="20"/>
- <img src="images/favo.jpg"   title="rate" width="20"/>
-     <a href="#">Obgbono by daniella</a> 
-     <img src="images/Jollof-Rice.jpg" />
-     <img src="images/favo.jpg"   title="Favorite This" width="20"/>
- <img src="images/favo.jpg"   title="Favorite This" width="20"/>
- <img src="images/favo.jpg"   title="Favorite This" width="20"/>
- <img src="images/favo2.jpg"   title="rate" width="20"/>
- <img src="images/favo2.jpg"   title="rate" width="20"/>
-     <a href="#">Jollof-Rice by Dauda</a>
-     <img src="images/dataa.jpg" />
-     <img src="images/favo.jpg"   title="Favorite This" width="20"/>
- <img src="images/favo.jpg"   title="Favorite This" width="20"/>
- <img src="images/favo.jpg"   title="Favorite This" width="20"/>
- <img src="images/favo2.jpg"   title="rate" width="20"/>
- <img src="images/favo2.jpg"   title="rate" width="20"/>
-     <a href="#">ladet by anah</a>
-     </div>  
+     <div class ="container">
+    <div class="col s12 m7">
+    <h2 class="header"></h2>
+    <div class="card horizontal">
+      <div class="">
+        <img src="images/male.png " width="100px"/>
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>Great Recipe, I've tried this 4times now Great Recipe, I've tried this 4 times nowGreat Recipe, I've tried this 4 times now</p>
+        </div>
+        <div class="card-action">
+          <a href="#"></a>
+        </div>
+      </div>
+  </div>
+  </div>
+      <div class="row">
+      <div class="col s12 m2 l2"></div>
+      <div class="col s12 m8 l8">
+       <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea class="materialize-textarea"></textarea>
+          <label>Write Review</label>
+        </div>
+        <button class="signbtn" type="submit">Post</button>
+      </div>
+    </form>
+    </div>
     
-</div>
-
-<div class="row">
-      <div class="col s12 m4 l4"> </div>
-    <div class="col s12 m4 m4"><button class="signbtn2"><a href="viewreview.html">View Reviews</a></button></div>
-
-    <div class="col s12 m4 l4"> </div>
-    </div>
-
-   <footer class="page-footer black">
+  </div>
+  <div class="s12 m2 l2"></div>
+  </div>
+  </div>
+  
+    </main>
+ <center><footer class="page-footer black">
+      
     <div class="footer-copyright">
-      <div class="container">
-      	© Copyright 2017. All rights reserved
+      <div class="container"  id="footertext">
+      	<span id='footertext'>© Copyright 2017. All rights reserved </span>
       </div>
     </div>
-  </footer>
+  </footer></center>
 
 </body>
 </html>

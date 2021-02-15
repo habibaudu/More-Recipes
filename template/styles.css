@@ -1,25 +1,105 @@
-html{
-	width:100%;
-	height:100%;
-}
+body {
+     display: flex;
+     min-height: 100vh;
+     flex-direction: column;
+ }
+ main {
+     flex: 1 0 auto;
+ }
 #main{
     margin-top: 0.5%;
      background-color: #EEEEEE;
 }
 
+#main2{
+    margin-top: 0.5%;
+    
+}
+#pad{
+    padding: 20%;
+}
+#pad2{
+    padding: 20%;
+}
 
 
-
-#title1{
+div >h6{
     text-align: center;
-    padding: 1%;
-    margin:1%;
+    padding: 3%;
+    border-radius: 2%;
 	font-family: Comic Sans MS;
 	font-size:115%;
-	color:#D50000;
-    border:1px solid #9E9E9E;
-    background-color: #616161;
+	color:white;
+    box-shadow:  1px 1px 1px black;
+    background:linear-gradient(red,black);
+	background:-o-linear-gradient(red,black);
+	background:-moz-linear-gradient(red, black);
 	text-shadow:1px 1px 2px #6f0d16; 
+}
+
+
+div >h5{
+     margin-top:1%;
+    width:100%;
+    padding: 2% 2%;
+    border: none;
+    font-size: 120%;
+    border-radius: 2%;
+    letter-spacing: 0.14em;
+    text-align: center;
+    box-sizing: border-box;
+	color:#D50000;
+    box-shadow:1px 1px 1px black;
+	background-color: white;
+   
+     
+}
+
+.lay a{
+ color: white;   
+}
+.lay{
+    text-align: center;
+    padding: 2%;
+	font-family: Comic Sans MS;
+	font-size:115%;
+	color:white;
+    box-shadow:  1px 1px 1px black;
+    background:linear-gradient(red,black);
+	background:-o-linear-gradient(red,black);
+	background:-moz-linear-gradient(red, black);
+	text-shadow:1px 1px 2px #6f0d16; 
+}
+#ani input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#ani input[type=text]:focus {
+    width: 100%;
+}
+
+
+.tex{
+    line-height: 190%;
+    font-family: realway;
+    font-size: 130%;    
+}
+.tex a{
+    color:#D50000;
+}
+#footertext{
+    margin-top : -18px;
 }
 #title2{
      text-align: center;
@@ -33,25 +113,15 @@ html{
 	text-shadow:1px 1px 2px #6f0d16; 
     
 }
-#one{
-     line-height: 175%;
-     font-size:110%;
-     color:#757575; 
-}
-#two{
-     line-height: 175%;
-     font-size:110%; 
-     color:#757575; 
-    
-}
+
 .signbtn{
     width:20%;
-    padding: 2% 2%;
+    padding: 0.8% 0.8%;
     border: none;
     font-size: 100%;
     letter-spacing: 0.14em;
     box-sizing: border-box;
-    border-radius:10%;
+    border-radius:3%;
 	color: #fff;
 	float: right;
 	background:linear-gradient(#D50000,black);
@@ -61,17 +131,21 @@ html{
 }
 .editbtn{
     width:20%;
-    padding: 2% 2%;
+    padding: 0.8% 0.8%;
     border: none;
     font-size: 100%;
     letter-spacing: 0.14em;
     box-sizing: border-box;
-    border-radius:10%;
+    border-radius:3%;
 	color: #fff;
 	background:linear-gradient(green,black);
 	background:-o-linear-gradient(green,black);
 	background:-moz-linear-gradient(green, black);
    
+}
+
+.colss{
+    color:black;
 }
 .signbtn2{
     width:100%;
@@ -80,12 +154,40 @@ html{
     font-size: 100%;
     letter-spacing: 0.14em;
     box-sizing: border-box;
-    border-radius:10%;
 	color: #fff;
-    margin:3%;
-	background:linear-gradient(#D50000,black);
-	background:-o-linear-gradient(#D50000,black);
-	background:-moz-linear-gradient(#D50000, black);
+	background:linear-gradient(red,black);
+	background:-o-linear-gradient(red,black);
+	background:-moz-linear-gradient(red, black);
+   
+}
+
+.signbtn4{
+    width:100%;
+    padding: 2% 2%;
+    border: none;
+    font-size:110%;
+    font-size: 100%;
+    letter-spacing: 0.14em;
+    box-sizing: border-box;
+	color: #D50000;
+	
+   
+}
+
+.signbtn3{
+    margin-top:1%;
+    width:100%;
+    padding: 0.8% 0.8%;
+    border: none;
+    font-size: 120%;
+    border-radius: 3%;
+    letter-spacing: 0.14em;
+    box-sizing: border-box;
+	color: #000000;
+    box-shadow:1px 1px 1px black;
+	background:linear-gradient(white,white);
+	background:-o-linear-gradient(red,black);
+	background:-moz-linear-gradient(red, black);
    
 }
 
@@ -113,12 +215,12 @@ input[type=text]{
 }
 
 .nav-wrapper em{
-    padding: 0.5%;
+    padding: 1%;
     margin:1%;
     border-radius: 50%;
 	width:50%;
 	font-family: Comic Sans MS;
-	font-size:150%;
+	font-size:157%;
     cursor: pointer;
 	color:#D50000;
 	text-shadow:1px 1px 2px #6f0d16; 
@@ -129,23 +231,29 @@ input[type=text]{
     cursor: pointer;
 	color:#9E9E9E;  
 }
+form em{
+    padding: 6%;
+    margin-left:40%;
+	font-family: Comic Sans MS;
+	font-size:235%;
+    cursor: pointer;
+	color:#D50000;
+	text-shadow:1px 1px 2px #6f0d16; 
+}
+form em:hover{
+    padding: 6%;
+	font-size:235%;
+    cursor: pointer; 
+}
+#down {
+    margin-top:5%;
+	 
+}
 
 img{
 	max-width: 100%;
     
 }
-
-img.avatar{
-    width: 20%;
-    border-radius: 50%;
-}
-
-.imgcontainer{
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
-}
-
 
 .container {
     padding:0.5%;
@@ -156,11 +264,12 @@ span.psw {
     padding-bottom: 3.5px;
 }
 
-span em{
+span .f{
 	color:#9E9E9E;
-	
-	
+}
 
+.avatar{
+    width:40%;
 }
 span a{
 	color:#D50000;
@@ -232,7 +341,11 @@ span a{
 	left:30%;
 }
 #instructions{
-font-family: realway;
+    font-family: realway;
+    line-height: 190%;
+    font-size: 130%;
+    text-justify: inter-word;
+
     
 }
 #equipment{
@@ -245,12 +358,7 @@ font-family: Comic Sans MS;
     
 
 }
-#ingredient ul li{
-    list-style: none;
-}
-#equipment ul li{
-    list-style: none;
-}
+
 #sidebar{
 width:30%;
 font-family: Comic Sans MS;
@@ -359,18 +467,8 @@ text-shadow:1px 1px 2px #6f0d16;
     width: 3%;
     cursor: pointer; 
 }
-#footer3{
-    width:100%;
-    color:#757575;
-    text-align: center;
-    display:-webkit-box;
-	-webkit-box-orient:horizontal;
-     background-color:#9E9E9E;
-    position:absolute;
-	top:265%;
-	left:0%;
-    
-}
+
+
 
 /* Myprofile.html*/
 #container{
@@ -433,16 +531,6 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
-}
-
-#footer4{
-    width:100%;
-    color:#757575;
-    position:absolute;
-    background-color:#9E9E9E;
-	top:140%;
-	left:0%;
-    
 }
 
 .dropdown {
